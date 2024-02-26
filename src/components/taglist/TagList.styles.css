@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #0f193e;
+}
+
+::selection {
+  color: #fff;
+  background: #5372F0;
+}
+
+.wrapper {
+  width: 496px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 18px 25px 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.06);
+}
+
+.wrapper :where(.title, li, li i, .details) {
+  display: flex;
+  align-items: center;
+}
+
+.title img {
+  max-width: 21px;
+}
+
+.title h2 {
+  font-size: 21px;
+  font-weight: 600;
+  margin-left: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.wrapper .content {
+  margin: 10px 0;
+}
+
+.wrapper .content form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 7px;
+  margin: 12px 0;
+  border-radius: 5px;
+}
+
+
+.content ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 7px;
+  margin: 12px 0;
+  border-radius: 5px;
+  border: 1px solid #a6a6a6;
+}
+
+.content ul .add-btn {
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 9px 15px;
+  border: none;
+  border-radius: 5px;
+  background: rgb(5, 172, 8);
+  transition: all 0.3s ease;
+}
+
+.content ul .add-btn:hover {
+  background: rgb(3, 122, 5);
+  border: none;
+}
+
+.content ul li {
+  color: #000000;
+  margin: 4px 3px;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  border-radius: 5px;
+  background: #d8d7d7;
+  padding: 5px 8px 5px 10px;
+  border: 1px solid #e3e1e1;
+}
+
+.content ul li .cross-icon {
+  color: red;
+  border: 1.5px solid red;
+  margin-left: 8px;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 1000;
+  justify-content: center;
+}
+
+.content ul input {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.wrapper .details {
+  justify-content: space-between;
+}
+
+.details button {
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 9px 15px;
+  border-radius: 5px;
+  background: rgb(171, 3, 171);
+  transition: all 0.3s ease;
+}
+
+.details button:focus {
+  outline: none;
+}
+
+.details button:hover {
+  background: rgb(131, 2, 131);
+}
